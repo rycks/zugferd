@@ -60,6 +60,13 @@ class ZugferdProfiles
      */
     const PROFILE_XRECHNUNG_2_2 = 7;
 
+
+    /**
+     * Minimum profile
+     */
+    const PROFILE_MINIMUM = 8;
+
+
     /**
      * The definitions of the several profiles
      */
@@ -157,5 +164,17 @@ class ZugferdProfiles
             'xsdfilename' => 'FACTUR-X_EN16931.xsd',
             'schematronfilename' => 'FACTUR-X_EN16931.sch',
         ],
+        self::PROFILE_MINIMUM => [
+            'name' => 'minimum',
+            'altname' => 'MINIMUM',
+            'description' => 'The MINIMUM profile includes the main information about the purchaser and vendor, the total invoice amount, and the total sales tax (VAT).' .
+                'Only the purchaser s reference can be given at item level. A breakdown of the sales tax (VAT) is not supported. It is therefore a booking aid.',
+            'contextparameter' => 'urn:factur-x.eu:1p0:minimum',
+            'attachmentfilename' => 'factur-x.xml',
+            'xmpname' => 'MINIMUM',
+            'xsdfilename' => 'FACTUR-X_MINIMUM.xsd',
+            'schematronfilename' => 'FACTUR-X_MINIMUM.sch',
+        ],
+
     ];
 }
