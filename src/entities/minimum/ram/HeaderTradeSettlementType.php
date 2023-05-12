@@ -350,10 +350,11 @@ class HeaderTradeSettlementType
      *
      * @return \horstoeko\zugferd\entities\minimum\ram\TradePaymentTermsType
      */
-    public function getSpecifiedTradePaymentTerms()
-    {
-        return $this->specifiedTradePaymentTerms;
-    }
+    // erics there is no specifiedTradePaymentTerms in MINIMUM profile
+    // public function getSpecifiedTradePaymentTerms()
+    // {
+    //     return $this->specifiedTradePaymentTerms;
+    // }
 
     /**
      * Sets a new specifiedTradePaymentTerms
